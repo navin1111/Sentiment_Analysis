@@ -1,7 +1,3 @@
-
-Memory updated
-Sure! Here's a README file for your sentiment analysis project using Bidirectional LSTM:
-
 Emotion Detection using Bidirectional LSTM
 This project involves the development of an emotion detection system using a Bidirectional Long Short-Term Memory (LSTM) model. The system classifies text inputs into one of six emotions: joy, anger, love, sadness, fear, and surprise.
 
@@ -19,16 +15,13 @@ License
 Installation
 To run this project, you'll need to install the following dependencies:
 
-sh
-Copy code
+
 pip install numpy pandas matplotlib scikit-learn keras tensorflow
 Dataset
 The dataset used for training, validation, and testing should be in .txt format with each line containing a sentence and its corresponding sentiment label separated by a semicolon (;).
 
 Example:
 
-vbnet
-Copy code
 I'm feeling great;joy
 This is terrible;anger
 Ensure that the dataset files train.txt, val.txt, and test.txt are placed in the appropriate directory.
@@ -56,7 +49,6 @@ You can use the trained model to predict emotions for new sentences by using the
 Example:
 
 python
-Copy code
 def predict(sentence):
     sentence_lst = [sentence]
     sentence_seq = tokenizer.texts_to_sequences(sentence_lst)
@@ -73,3 +65,6 @@ Confusion matrix and loss/accuracy curves can be plotted to visualize the perfor
 
 Contributing
 Contributions are welcome! Please submit a pull request or open an issue to discuss any changes or improvements.
+
+License
+This project is licensed under the MIT License.
